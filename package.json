@@ -1,0 +1,32 @@
+{
+  "name": "quantas-hotel-coding-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Somin Wani",
+  "license": "ISC",
+  "scripts": {
+    "install": "npx playwright install",
+    "test": "npx playwright test; npx allure serve allure-results ",
+    "test:chrome": "npx playwright test --project=chrome",
+    "test:safari": "npx playwright test --project=safari",
+    "test:firefox": "npx playwright test --project=firefox"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.13.13",
+    "allure-commandline": "^2.33.0",
+    "allure-playwright": "^3.2.1",
+    "dotenv": "^16.4.7",
+    "dotenv-cli": "^8.0.0",
+    "eslint": "9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.4",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "type-fest": "^4.38.0",
+    "typescript": "^5.8.2"
+  }
+}
