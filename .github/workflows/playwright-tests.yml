@@ -26,6 +26,8 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y xvfb
+          # Kill any existing Xvfb process
+          pkill Xvfb || true
           nohup Xvfb :99 -screen 0 1280x1024x24 &
           export DISPLAY=:99
 
